@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    
+}
+.container {
+   position: absolute;
+   top: 30%;
+   left: 50%;
+   transform: translate(-50%,-30%);
+}
+body {
+    background-color: #04043b;
+    font-family: 'poppins', sans-serif;   
+    overflow: hidden;
+}
+.top {
+    display: flex;
+    /* flex-direction: row; */
+    color: #fff;
+}
+.top-right{
+    padding-top: 1%;
+    padding-left: 75%;
+}
+.input-container {
+    display: flex;
+    max-width: 700px;
+    width: 100%;
+}
+.input-container input{
+    width: 500px;
+    background-color: #050568;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-family: inherit;
+    font-size: 16px;
+    outline: none;
+}
+.input-container input::placeholder{
+    color: #fff;
+}
+.btn {
+    background-color: rgb(55, 129, 199);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    height: 50px;
+    /* margin-top: 1px; */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-family: inherit;
+    font-size: 16px;
+    outline: none;
+    margin-left: 8%;
+}
+.user-details {
+    background-color: #050568;
+    color: #fff;
+    max-width: 700px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.user-details-b{
+    display: none;
+}
+.user-details img {
+    width: 100px;
+    /* height: 50px; */
+    border: none;
+    border-radius: 50%;
+    margin-top: 2%;
+    position: absolute;
+    float: left;
+}
+.user-details .primary-info {
+    position: relative;
+    left: 25%;
+}
+.name {
+    display: flex;
+}
+.date{
+    padding: 2% 10%;
+    font-size: 14px;
+}
+.repos {
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: none;
+    border-radius: 10px;
+    background-color: #04043b;
+    width: 400px;
+}
+.repos p {
+    padding-left: 25px;
+}
+.media-info{
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 400px;
+    padding: 1rem;
+}
+.media-info i {
+    font-size: 16px;
+}
+.rishi{
+    display: flex;
+margin-top: 18px;
+}
+.blog{
+    /* margin-right: -1%; */
+    width: 50%;
+}
+.blogs{
+    display: flex;
+    padding-top: 7%;
+}
+.bio {
+    font-size: 14px;
+}
+
+
+@media screen and (max-width: 620px){
+   body{
+       overflow-x: hidden;
+   }
+    .container {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-30%);
+        
+     }
+     .input-container {
+        display: flex;
+       margin-left: -25%;
+        width: 100%;
+    }
+    .input-container input{
+        width: 150px;
+        background-color: #050568;
+        border: none;
+        border-radius: 10px;
+        color: #fff;
+        padding: 1rem;
+        /* margin-bottom: 1rem; */
+        font-family: inherit;
+        font-size: 16px;
+        outline: none;
+    }
+}
